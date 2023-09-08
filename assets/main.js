@@ -1,16 +1,9 @@
-let a = prompt('стоимость товара')
-let b = prompt('кол-во денег клиента')
+let city = prompt('Название города')
+let year = prompt('Год образования')
+let people = prompt('Население города')
 
-if(a == b){
-    alert('Покупка совершена')
-}
-else{
-    if(a>b){
-        let x = a - b
-        alert('Для покупки не хватает ' + x + 'р.')
-    }
-    else{
-        let x = b - a
-        alert('Покупка совершена. Ваша сдача ' + x + 'р.')
-    }
-}
+// вычисление возраста города
+let this_year = 2023
+let vozrast = this_year - year
+
+alert('Городу ' + city + ' исполнилось ' + vozrast + ' лет с момента его образования. ' + people + ' человек ')
